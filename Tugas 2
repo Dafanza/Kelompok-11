@@ -20,3 +20,18 @@ class Peta:
             del self.cityList[cityRemoved]
             return True
         return False
+
+   def tambahkanJalan(self, city1, city2):
+        if city1 in self.cityList and city2 in self.cityList:
+            self.cityList[city2].append(city1)
+            self.cityList[city1].append(city2)
+            return True
+        return False
+
+    def hapusJalan(self, city1, city2):
+        if city1 in self.cityList and city2 in self.cityList:
+            self.cityList[city2].remove(city1) 
+            self.cityList[city1].remove(city2) 
+            return True
+        return False
+
