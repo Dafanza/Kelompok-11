@@ -34,4 +34,3 @@ class Peta:
             self.cityList[city1].remove(city2) 
             return True
         return False
-
