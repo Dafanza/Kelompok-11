@@ -1,0 +1,22 @@
+class Peta:
+    def __init__(self):
+        self.cityList = {}
+
+    def display(self):
+        for city in self.cityList: 
+            print(city, ":", self.cityList[city])
+
+    def addcity(self, city):
+        if city not in self.cityList:
+            self.cityList[city] = []
+            return True
+        return False
+
+    def hapuscity(self, cityRemoved):
+        if cityRemoved in self.cityList:
+            for otherCity in self.cityList:
+                if cityRemoved in self.cityList[otherCity]: 
+                    self.cityList[otherCity].remove(cityRemoved)
+            del self.cityList[cityRemoved]
+            return True
+        return False
