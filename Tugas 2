@@ -34,3 +34,32 @@ class Peta:
             self.cityList[city1].remove(city2) 
             return True
         return False
+
+petaJateng = Peta()
+petaJateng.addcity("Pemalang")
+petaJateng.addcity("Tegal")
+petaJateng.addcity("Cilacap") 
+petaJateng.addcity("Purwokerto")
+petaJateng.addcity("Kebumen")
+petaJateng.addcity("Wonosobo")
+petaJateng.addcity("Purworejo")
+petaJateng.addcity("Magelang")
+petaJateng.addcity("Salatiga")
+petaJateng.addcity("Demak")
+petaJateng.addcity("Semarang")
+petaJateng.addcity("Pekalongan")
+
+petaJateng.tambahkanJalan("Pemalang", "Tegal")
+petaJateng.tambahkanJalan("Cilacap", "Tegal")
+petaJateng.tambahkanJalan("Purwokerto", "Cilacap")
+petaJateng.tambahkanJalan("Kebumen", "Purwokerto")
+petaJateng.tambahkanJalan("Wonosobo", "Kebumen")
+petaJateng.tambahkanJalan("Purworejo", "Wonosobo")
+petaJateng.tambahkanJalan("Magelang", "Purworejo")
+petaJateng.tambahkanJalan("Salatiga", "Magelang")
+petaJateng.tambahkanJalan("Demak", "Salatiga")
+petaJateng.tambahkanJalan("Semarang", "Demak")
+petaJateng.tambahkanJalan("Pekalongan", "Semarang")
+petaJateng.tambahkanJalan("Pemalang", "Pekalongan")
+
+petaJateng.display()
